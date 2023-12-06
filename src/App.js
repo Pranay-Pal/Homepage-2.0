@@ -16,6 +16,8 @@ import Archive from './components/Archive/Archive';
 import Team from './components/Team/Team';
 import Registration from './components/Registration/Registration';
 import UpcomingEvents from './components/UpcomingEvents/UpcomingEvents';
+import Winners from './components/Winners';
+import Events from './components/Events';
 
 function App() {
   
@@ -59,6 +61,8 @@ function App() {
             <Route path = "/archives" element={
               <Archive />
             }/>
+            <Route path='/event' element={<Events/>}/>
+            <Route path='/event/:id' element={<Winners/>}/>
           </Routes>
         <Footer />
       </BrowserRouter>
